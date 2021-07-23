@@ -1,4 +1,4 @@
-# Smokeball JavaScript Coding Challenge
+# Smokeball TypeScript Coding Challenge
 
 ## System Requirements
 
