@@ -35,6 +35,7 @@ Note that for this challenge, the HTTP calls are mocked. You *must* use the prov
 
 ## Tips
 * Only modify the `get-arnie-quotes.ts` file.
+* Properly define the `TResult` type.
 * You may introduce additional internal functions in `get-arnie-quotes.ts`
 * Exploring all of the code files may provide you with useful hints. 
 * Not all of the requirements are covered by the unit tests.
