@@ -1,4 +1,4 @@
-const { getArnieQuotes } = require('./get-arnie-quotes');
+import { getArnieQuotes } from './get-arnie-quotes';
 
 const urls = [
   'http://www.smokeballdev.com/arnie0',

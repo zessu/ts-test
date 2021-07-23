@@ -3,23 +3,23 @@
 ## System Requirements
 
 The coding challenge requires the following to be installed on your development machine;
-* [nodejs](https://nodejs.org/en/download/) version 10 or above.
+* [nodejs](https://nodejs.org/en/download/) version 12 or above.
 * A [git](https://git-scm.com/downloads) client.
 
 ## Installation
 
-1. Fork the `javascript-developer-test` repository to your personal github account.
-2. Clone the `javascript-developer-test` repository from your personal github account onto your development machine.
-3. Open a terminal and `cd` into the root directory of the `javascript-developer-test` repository.
+1. Fork the `ts-test` repository to your personal github account.
+2. Clone the `ts-test` repository from your personal github account onto your development machine.
+3. Open a terminal and `cd` into the root directory of the `ts-test` repository.
 4. Execute `npm install` in the terminal.
 
 ## Challenge Instructions
 
-Your challenge is to implement the `getArnieQuotes()` function, which is exported from `./src/get-arnie-quotes.js`.
+Your challenge is to implement the `getArnieQuotes()` function, which is exported from `./src/get-arnie-quotes.ts`.
 
 The `getArnieQuotes()` function accepts an array of strings, with each string containing a URL. 
 
-The unit tests in `./src/get-arnie-quotes.test.js` will provide pre-defined URLs to the function and test your function's implementation. To run the unit tests, execute `npm test` in the terminal.
+The unit tests in `./src/get-arnie-quotes.spec.ts` will provide pre-defined URLs to the function and test your function's implementation. To run the unit tests, execute `npm test` in the terminal.
 
 The goal is to write an implementation of `getArnieQuotes()` that meets all requirements and passes all unit tests.
 ## Requirements
@@ -34,8 +34,8 @@ Finally, the `getArnieQuotes()` function's return value must be a promise that r
 Note that for this challenge, the HTTP calls are mocked. You *must* use the provided `httpGet` function to perform your HTTP requests.
 
 ## Tips
-* Only modify the `get-arnie-quotes.js` file.
-* You may introduce additional internal functions in `get-arnie-quotes.js`
+* Only modify the `get-arnie-quotes.ts` file.
+* You may introduce additional internal functions in `get-arnie-quotes.ts`
 * Exploring all of the code files may provide you with useful hints. 
 * Not all of the requirements are covered by the unit tests.
 * We are most impressed with readable code that works.

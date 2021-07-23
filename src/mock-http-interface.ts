@@ -1,5 +1,3 @@
-'use strict';
-
 const urlPrefix = `http://www.smokeballdev.com`;
 
 const urlToResponseLookup = {
@@ -8,7 +6,7 @@ const urlToResponseLookup = {
   [`${urlPrefix}/arnie2`]: `What's wrong with Wolfie?`,
 };
 
-const httpRequestMockP = (url) => new Promise((resolve, reject) => {
+const httpRequestMockP = (url : string) => new Promise((resolve, reject) => {
   setTimeout(() => {
     const responseData = urlToResponseLookup[url];
     if (responseData) {
@@ -19,7 +17,7 @@ const httpRequestMockP = (url) => new Promise((resolve, reject) => {
   }, 200);
 });
 
-const httpGet = async (url) => {
+export const httpGet = async (url : string) => {
   try {
     const message = await httpRequestMockP(url);
     return { status: 200, body: JSON.stringify({ message }) };
@@ -27,8 +25,4 @@ const httpGet = async (url) => {
   catch (err) {
     return { status: 500, body: JSON.stringify({ message: err.message }) };
   }
-};
-
-module.exports = {
-  httpGet,
 };
