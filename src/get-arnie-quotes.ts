@@ -13,7 +13,6 @@ export const getArnieQuotes = async (urls: string[]): Promise<TResult> => {
         if (status === 200) {
           result.push({ "Arnie Quote": message });
         } else {
-          console.log("this was not found in the list");
           result.push({ FAILURE: message });
         }
       });
