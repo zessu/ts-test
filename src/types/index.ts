@@ -14,3 +14,5 @@ type HttpGetResponse = {
 type QueryResult = Quote | CodeError;
 
 type TResult = QueryResult[];
+
+export { HttpGetResponse, TResult };
