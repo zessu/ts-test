@@ -1,22 +1,6 @@
 import { httpGet } from "./mock-http-interface";
 
 // TODO define this type properly
-type Quote = {
-  "Arnie Quote": string;
-};
-
-type Error = {
-  FAILURE: string;
-};
-
-type HttpGetResponse = {
-  status: number;
-  body: string;
-};
-
-type QueryResult = Quote | Error;
-
-type TResult = QueryResult[];
 
 export const getArnieQuotes = async (urls: string[]): Promise<TResult> => {
   const result: TResult = [];
